@@ -54,10 +54,8 @@ function setupSocialLinks() {
     const socialContainer = document.querySelector('.social-links');
     
     if (socialContainer) {
-        // Clear any existing placeholder content
         socialContainer.innerHTML = '';
-        
-        // Create and append each social media link
+    
         socialMediaLinks.forEach(platform => {
             const link = document.createElement('a');
             link.href = platform.url;
@@ -79,25 +77,20 @@ function setupSocialLinks() {
 // Menu Navigation Functionality
 document.querySelectorAll('.secondary-nav-btn').forEach(button => {
     button.addEventListener('click', function() {
-        // Remove active class from all buttons
         document.querySelectorAll('.secondary-nav-btn').forEach(btn => {
             btn.classList.remove('active');
         });
-        
-        // Add active class to clicked button
+    
         this.classList.add('active');
         
-        // Handle navigation for specific buttons
         const buttonText = this.textContent.trim();
         
         if (buttonText === 'Featured') {
             window.location.href = 'viewmenu.html';
         }
-        // Add other navigation logic here if needed
         
         console.log(`Loading ${buttonText} content...`);
     });
 });
 
-// Initialize social links when page loads
 document.addEventListener('DOMContentLoaded', setupSocialLinks);

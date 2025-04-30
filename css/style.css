@@ -1,5 +1,4 @@
-    /* Reset and Base Styles */
-    * {
+  * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -12,7 +11,7 @@
         background-color: #f9f9f9;
     }
 
-    /* Updated Navbar Styling */
+    /* Navbar Styling */
     .navbar {
         margin-bottom: 0;
         display: flex;
@@ -36,12 +35,11 @@
         transform: scale(1.05);
     }
 
-    /* Primary Navigation - Tight spacing */
     .nav-links {
         list-style: none;
         display: flex;
-        gap: 0.5rem; /* Reduced from 1rem to make items closer */
-        margin-left: 0; /* Added to move closer to logo */
+        gap: 0.5rem;
+        margin-left: 0; 
     }
 
     .nav-links a {
@@ -55,20 +53,19 @@
         letter-spacing: 0.5px;
     }
 
-    /* Secondary Navigation Bar */
     .secondary-nav {
         background-color: #ffffff;
-        padding: 0.5rem 0; /* Reduced padding */
+        padding: 0.5rem 0;
         border-bottom: 1px solid #e1e1e1;
         position: sticky;
-        top: 60px; /* Adjusted based on navbar height */
+        top: 60px; 
         z-index: 99;
     }
 
     .secondary-nav-container {
         display: flex;
         justify-content: center;
-        gap: 1.5rem; /* Reduced from 24px */
+        gap: 1.5rem; 
         max-width: 500px;
         padding: 0 16px;
     }
@@ -76,29 +73,29 @@
     .secondary-nav-btn {
         background: none;
         border: none;
-        padding: 0.5rem 0.8rem; /* Reduced padding */
-        font-size: 0.80rem; /* Smaller font size */
-        font-weight: 500; /* Lighter weight */
+        padding: 0.5rem 0.8rem; 
+        font-size: 0.80rem; 
+        font-weight: 500; 
         color: #666666;
         cursor: pointer;
         transition: all 0.3s ease;
         position: relative;
-        letter-spacing: 0.3px; /* Reduced letter spacing */
+        letter-spacing: 0.3px; 
     }
 
     .secondary-nav-btn.active {
         color: #006241;
-        font-weight: 600; /* Slightly bolder for active */
+        font-weight: 600; 
     }
 
     .secondary-nav-btn.active::after {
         content: '';
         position: absolute;
-        bottom: -6px; /* Raised slightly */
+        bottom: -6px; 
         left: 50%;
         transform: translateX(-50%);
-        width: calc(100% - 16px); /* Smaller underline */
-        height: 2px; /* Thinner underline */
+        width: calc(100% - 16px); 
+        height: 2px;
         background-color: #006241;
         border-radius: 3px 3px 0 0;
     }
@@ -426,13 +423,13 @@
 
     /* Legal Links Section */
     .legal-links {
-        list-style: none; /* Ini menghilangkan bullet points */
-        padding-left: 0; /* Menghilangkan padding kiri default */
-        margin: 0 0 20px 0; /* Menghilangkan margin default dan set bottom margin */
+        list-style: none; 
+        padding-left: 0; 
+        margin: 0 0 20px 0; 
     }
 
     .legal-links li {
-        margin-bottom: 8px; /* Memberikan jarak antar item */
+        margin-bottom: 8px; 
     }
 
     .legal-links a {
@@ -558,7 +555,7 @@
         }
         
         .secondary-nav {
-            top: auto; /* Reset position */
+            top: auto; 
             position: relative;
         }
         
